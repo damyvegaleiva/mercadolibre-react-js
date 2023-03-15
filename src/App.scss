@@ -1,0 +1,38 @@
+@import "./Components/ItemList/ItemList.scss";
+@import "./Components/Item/Item.scss";
+@import "./Components/NavBar/NavBar.scss";
+@import "./Components/ItemListContainer/ItemListContainer.scss";
+@import "./Components/HeaderContainer/HeaderContainer.scss";
+@import "./Components/CategoriesContainer/CategoriesContainer.scss";
+@import "./Components/LoadingSpinner/LoadingSpinner.scss";
+@import "./Components/NavBarSearch/NavBarSearch.scss";
+@import "./Components/Carousel/Carousel.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  // font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ededed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
