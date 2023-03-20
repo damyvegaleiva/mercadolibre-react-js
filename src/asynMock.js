@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const APIurl = 'https://api.mercadolibre.com/sites/MLA/search?q=';
+const APIurl = 'https://api.mercadolibre.com/';
 
 export function useFetch(searchValue) {
     const [data, setData] = useState([])
@@ -16,7 +16,11 @@ export function useFetch(searchValue) {
                 .then(resolve => resolve.json())
                 .then(data => {
                     setError(null)
-                    setData(data.results.splice(1, 15))
+                    if (data?.results === undefined) {
+                        setData(data[0].body)
+                    } else {
+                        setData(data.results.splice(1, 15))
+                    }
                 })
                 .catch(error => setError(error))
                 .finally(() => SetLoading(false))

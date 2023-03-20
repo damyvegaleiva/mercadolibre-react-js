@@ -10,7 +10,7 @@ const NavBar = () => {
                 <Link to='/'><img src="/images/logo.png" alt="Logo mercadolibre" /></Link>
                 <NavBarSearch />
                 <ul className="nav-bar-container__list">
-                    <li><Link to='/category/celulares'>Celulares</Link></li>
+                    <li><Link to='/category/MLA1051'>Celulares</Link></li>
                     <li><Link to='/category/tablets'>Tablets</Link></li>
                     <li><Link to='/category/laptops'>Laptops</Link></li>
                 </ul>

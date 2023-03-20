@@ -43,7 +43,6 @@
 
 // export default Carousel;
 
-
 import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselHeader() {
@@ -51,7 +50,7 @@ function CarouselHeader() {
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block image-carousel"
           src="./images/plants-drop.jpg"
           alt="First slide"
         />
@@ -62,8 +61,8 @@ function CarouselHeader() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="./images/product-drop.jpg"
+          className="d-block image-carousel"
+          src="./images/electro.webp"
           alt="Second slide"
         />
 
@@ -74,8 +73,8 @@ function CarouselHeader() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="./images/sports-drop.jpg"
+          className="d-block image-carousel"
+          src="./images/product-drop.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -83,6 +82,17 @@ function CarouselHeader() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block image-carousel"
+          src="./images/gaming.webp"
+          alt="Forth slide"
+        />
+        <Carousel.Caption>
+          <h3>Forth slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

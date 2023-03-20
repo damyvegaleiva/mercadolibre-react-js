@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../asynMock";
+
 import ItemList from "../ItemList/ItemList";
 import ItemSearch from "../ItemSearch/ItemSearch";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 const ItemListContainer = ({ greeting }) => {
-    const { categoryId } = useParams();
-    const { data: products, error, isLoading } = useFetch(categoryId ? categoryId : '')
+    const { searchId, categoryId } = useParams();
+    const { data: products, error, isLoading } = useFetch(searchId ? `sites/MLA/search?q=${searchId}` : categoryId ? `/sites/MLA/search?category=${categoryId}` : '')
 
 
     if (isLoading) {
@@ -22,7 +23,7 @@ const ItemListContainer = ({ greeting }) => {
             <h1 className="item-list-container__title">{greeting}</h1>
             {/* {categoryId ? null : <Home />} */}
             <div style={{ display: "flex" }}>
-                {categoryId && <ItemSearch />}
+                {(searchId || categoryId) && <ItemSearch />}
                 <ItemList products={products} />
             </div>
         </div>
