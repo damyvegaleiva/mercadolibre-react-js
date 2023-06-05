@@ -1,0 +1,48 @@
+.item-detail__info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  gap: 15px;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .item-options__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .item-options__options {
+      display: flex;
+    }
+
+    .item-options__quantity {
+      padding: 0 10px;
+    }
+
+    button {
+      padding: 2px;
+    }
+  }
+
+  .item-detail__purchase {
+    width: 100%;
+    button {
+      background: #3483fa;
+      color: white;
+      padding: 10px 0;
+      width: 50%;
+      border: none;
+      border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,7 +1,9 @@
-.item-detail-container__item {
+.item-detail__container {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  flex-flow: column nowrap;
+  margin: 100px auto 0;
+  background: white;
+  width: 80%;
 }

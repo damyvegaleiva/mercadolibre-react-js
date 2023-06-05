@@ -1,7 +1,38 @@
-.item-list-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 2rem;
+.item-list__container {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 150px auto 0;
+  width: 75%;
+}
+
+.item-list__item {
+  display: flex;
+  background: white;
+  width: 75%;
+  padding: 20px;
+  gap: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  h2 {
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.item-list__details {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }

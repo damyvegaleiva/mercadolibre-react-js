@@ -1,15 +1,14 @@
-@import "./Components/ItemList/ItemList.scss";
-@import "./Components/Item/Item.scss";
-@import "./Components/NavBar/NavBar.scss";
-@import "./Components/ItemListContainer/ItemListContainer.scss";
-@import "./Components/HeaderContainer/HeaderContainer.scss";
-@import "./Components/CategoriesContainer/CategoriesContainer.scss";
-@import "./Components/LoadingSpinner/LoadingSpinner.scss";
-@import "./Components/NavBarSearch/NavBarSearch.scss";
-@import "./Components/Carousel/Carousel.scss";
-@import "./Components/CartWidget/CartWidget.scss";
-@import "./Components/ItemDetail/ItemDetail.scss";
-@import "./Components/ItemCount/ItemCount.scss";
+@import "./components/NavBar/NavBar.scss";
+@import "./components/CategoriesList/CategoriesList.scss";
+@import "./components/Carousel/Carousel.scss";
+@import "./components/CarouselContainer/CarouselContainer.scss";
+@import "./components/ItemList/ItemList.scss";
+@import "./components/SearchBar/SearchBar.scss";
+@import "./components/ItemDetail/ItemDetail.scss";
+@import "./components/ItemOptions/ItemOptions.scss";
+@import "./components/ItemDetailInfo/ItemDetailInfo.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 html {
   box-sizing: border-box;
@@ -26,16 +25,6 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #ededed;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Roboto", sans-serif;
 }

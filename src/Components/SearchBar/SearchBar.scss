@@ -1,0 +1,30 @@
+.nav-bar__form {
+  border-radius: 5px;
+  grid-area: area2;
+  position: relative;
+  width: 60%;
+
+  input {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 15px;
+    border: none;
+    &:focus {
+      outline: 2px solid rgb(0, 102, 246);
+    }
+  }
+
+  button {
+    width: 40px;
+    background: white;
+    border: none;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    border-radius: 0 3px 3px 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
